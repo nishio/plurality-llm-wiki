@@ -37,3 +37,7 @@
 ## Analyses
 
 言語間で発見された文節化の差異を ad-hoc に記録していく場所。仮説検証は実運用の結果として自然に貯まることを期待し、無理に先取りしない。
+
+- [[suzuki-ken-lineage]] — 鈴木健由来の 4 concept page (なめらかな社会とその敵 / 分人 / 分人民主主義 / PICSY) が JA 固有の理論系譜を形成
+- [[role-vs-ideology-noun-split]] — テクノクラート vs テクノクラシー、リバタリアン vs リバタリアニズム — 日本語の外来語形態が concept space の文節化を駆動
+- [[japan-reverse-import]] — 安野貴博の 2024 東京都知事選由来のブロードリスニングが本書日本語版に逆輸入された pattern

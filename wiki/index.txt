@@ -3,3 +3,6 @@
 # Format: <stem>\t<type>\t<path>\t<summary>
 # Regenerate: python3 scripts/build_index_txt.py
 
+japan-reverse-import	analysis	analyses/japan-reverse-import.md	安野貴博の 2024 年東京都知事選キャンペーンで使われたブロードリスニング (Talk to the City) が、本書日本語版の本文に逆輸入された。原書執筆後に発生した日本コミュニティの実践が、翻訳プロセスで本書を extend した例。
+role-vs-ideology-noun-split	analysis	analyses/role-vs-ideology-noun-split.md	JA wiki は role noun (テクノクラート / リバタリアン) と ideology noun (テクノクラシー / リバタリアニズム) を別の concept page に分けている。EN wiki は ideology side のみ。日本語の loanword 形態が概念空間の文節化を駆動している例。
+suzuki-ken-lineage	analysis	analyses/suzuki-ken-lineage.md	JA wiki は鈴木健由来の concept page を 4 つ持ち、EN 側に対応する dedicated 概念がない。JA 概念空間が独自に持つ理論系譜。
