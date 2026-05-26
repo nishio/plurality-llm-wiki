@@ -3,3 +3,11 @@ raw/
 __pycache__/
 *.pyc
 .venv/
+
+# Quartz / GitHub Pages
+node_modules/
+.quartz-cache/
+public/
+
+# nested child wikis (independent repos)
+wikis/

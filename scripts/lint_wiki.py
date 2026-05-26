@@ -3,8 +3,10 @@
 Usage: python3 scripts/lint_wiki.py
 """
 import re
-from pathlib import Path
 from collections import defaultdict
+from pathlib import Path
+
+import yaml
 
 WIKI = Path(__file__).parent.parent / "wiki"
 
@@ -36,7 +38,8 @@ FRONTMATTER = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
 
 outgoing = defaultdict(set)   # page -> set of pages it links to
 incoming = defaultdict(set)   # page -> set of pages linking to it
-frontmatter = {}              # page -> dict of fm fields (raw text per key)
+frontmatter = {}              # page -> parsed frontmatter
+frontmatter_errors = []       # [(page, error)]
 
 for path in page_paths:
     name = page_ref(path)
@@ -45,30 +48,22 @@ for path in page_paths:
     fm_text = m.group(1) if m else ""
     body = text[m.end():] if m else text
 
-    # crude frontmatter parse: only keys we care about
     fm = {}
-    for line in fm_text.splitlines():
-        line = line.rstrip()
-        if line.startswith(("type:", "summary:", "sources:", "date:", "url:", "raw_sources:")):
-            key, _, val = line.partition(":")
-            fm[key.strip()] = val.strip()
-        # detect indented list items as part of last list-key (sources/raw_sources)
-    # check whether sources/raw_sources actually has any value (list item or inline)
+    if m:
+        try:
+            parsed = yaml.safe_load(fm_text) or {}
+            if not isinstance(parsed, dict):
+                raise TypeError(f"frontmatter must be a mapping, got {type(parsed).__name__}")
+            fm = parsed
+        except Exception as exc:
+            frontmatter_errors.append((name, str(exc).splitlines()[0]))
+
     has_sources = False
-    in_sources_block = False
-    for line in fm_text.splitlines():
-        stripped = line.rstrip()
-        if stripped.startswith(("sources:", "raw_sources:")):
-            tail = stripped.split(":", 1)[1].strip()
-            if tail:  # inline value like "sources: foo.md"
-                has_sources = True
-            in_sources_block = True
-            continue
-        if in_sources_block:
-            if line.startswith(("  -", "    -", "\t-")) and line.strip().startswith("-"):
-                has_sources = True
-            elif stripped and not stripped.startswith(" "):
-                in_sources_block = False
+    sources_value = fm.get("sources") or fm.get("raw_sources")
+    if isinstance(sources_value, list):
+        has_sources = len(sources_value) > 0
+    elif sources_value:
+        has_sources = True
     fm["__has_sources__"] = has_sources
     frontmatter[name] = fm
 
@@ -82,13 +77,27 @@ for path in page_paths:
         outgoing[name].add(target)
         incoming[target].add(name)
 
-# also parse index.md to count its outgoing links (it's the catalog)
-index_text = (WIKI / "index.md").read_text(encoding="utf-8")
-INDEX_LINK = re.compile(r"\((?:([^()]*?)/)?([^()/]+)\.md\)")
-index_targets = set()
-for prefix, stem in INDEX_LINK.findall(index_text):
-    index_targets.add(stem)
-indexed = set(pages) & index_targets
+# also parse index.md (human-facing curated nav) and index.txt (AI-facing full catalog)
+index_md_text = (WIKI / "index.md").read_text(encoding="utf-8")
+INDEX_LINK = re.compile(r"\(([a-zA-Z0-9_-]+/)?([a-zA-Z0-9_-]+)\.md\)")
+index_md_targets = set()
+for prefix, stem in INDEX_LINK.findall(index_md_text):
+    index_md_targets.add(stem)
+indexed_md = set(pages) & index_md_targets
+
+index_txt_path = WIKI / "index.txt"
+index_txt_stems: set[str] = set()
+if index_txt_path.exists():
+    for line in index_txt_path.read_text(encoding="utf-8").splitlines():
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split("\t")
+        if parts:
+            index_txt_stems.add(parts[0])
+indexed_txt = set(pages) & index_txt_stems
+
+# For "indexed" (used in orphan section header), prefer the AI catalog which is exhaustive
+indexed = indexed_txt if index_txt_path.exists() else indexed_md
 
 # ---------- Reports ----------
 print("=" * 60)
@@ -109,7 +118,7 @@ print()
 # 1. Orphan detection: pages with no incoming wikilinks
 orphans = sorted(page_ref(path) for path in page_paths if not incoming.get(path.stem))
 print(f"## 孤立ページ（incoming wikilinkなし）: {len(orphans)}")
-print("（index.md登録は別カウント）")
+print("（index.txt / index.md 登録は別カウント）")
 for name in orphans:
     stem = name.rsplit("/", 1)[-1]
     in_index = "✓index" if stem in indexed else "✗index"
@@ -134,11 +143,20 @@ for target in broken:
 print()
 
 # 3. Missing index entries
-missing_in_index = sorted(set(pages) - indexed)
-print(f"## index.mdに未登録: {len(missing_in_index)}")
-for name in missing_in_index:
-    typ = frontmatter[name].get("type", "?").strip()
-    print(f"  - [{typ}] {name}")
+# index.txt is the AI-facing exhaustive catalog and must include every page.
+# index.md is curated; pages missing from it is normal and not flagged here.
+if index_txt_path.exists():
+    missing_in_index_txt = sorted(set(pages) - indexed_txt)
+    print(f"## index.txtに未登録 (要 `python3 scripts/build_index_txt.py`): {len(missing_in_index_txt)}")
+    for name in missing_in_index_txt:
+        typ = frontmatter[name].get("type", "?").strip()
+        print(f"  - [{typ}] {name}")
+else:
+    missing_in_index_md = sorted(set(pages) - indexed_md)
+    print(f"## index.mdに未登録: {len(missing_in_index_md)}")
+    for name in missing_in_index_md:
+        typ = frontmatter[name].get("type", "?").strip()
+        print(f"  - [{typ}] {name}")
 print()
 
 # 4. Frontmatter health
@@ -147,8 +165,11 @@ missing_type = [n for n, fm in frontmatter.items() if "type" not in fm]
 missing_summary = [n for n, fm in frontmatter.items() if "summary" not in fm]
 missing_sources_required = [
     n for n, fm in frontmatter.items()
-    if fm.get("type", "").strip() in ("source", "concept") and not fm["__has_sources__"]
+    if str(fm.get("type", "")).strip() in ("source", "concept") and not fm["__has_sources__"]
 ]
+print(f"  YAML parse errors: {len(frontmatter_errors)}")
+for n, err in frontmatter_errors:
+    print(f"    - {n}: {err}")
 print(f"  type欠落: {len(missing_type)}")
 for n in missing_type:
     print(f"    - {n}")
@@ -157,7 +178,7 @@ for n in missing_summary:
     print(f"    - {n}")
 print(f"  sources欠落 (source/concept type): {len(missing_sources_required)}")
 for n in missing_sources_required:
-    typ = frontmatter[n].get("type", "?").strip()
+    typ = str(frontmatter[n].get("type", "?")).strip()
     print(f"    - [{typ}] {n}")
 print()
 

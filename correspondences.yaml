@@ -1,0 +1,19 @@
+# Cross-language concept correspondences for plurality-llm-wiki.
+#
+# Each entry asserts "these concepts are about the same/related topic" without
+# claiming content equivalence (Wikipedia interlanguage-link metaphor). Null
+# (~) means "no correspondence found in that language" — discoverable gaps.
+#
+# Add a new language by adding a column (e.g. `ko:` / `zh:`). The schema is
+# intentionally flat to keep entries compact and easy to read.
+#
+# Tools:
+#   python3 scripts/show_gaps.py    # list gaps and unmapped concept pages
+#
+# Maintenance: after ingest creates a new concept page, either add a row here
+# (or extend an existing row with a sibling-language correspondence), or
+# explicitly mark the other languages as ~ to record the gap.
+
+- en: Plurality
+  ja: プルラリティ
+  notes: 本 wiki の eponymous concept。ja 訳語として「多元性」も使われるが、書籍ではカタカナ「プルラリティ」を採用。
