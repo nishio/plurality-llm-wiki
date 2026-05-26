@@ -14,6 +14,186 @@
 # (or extend an existing row with a sibling-language correspondence), or
 # explicitly mark the other languages as ~ to record the gap.
 
+# ============================================================
+# Core
+# ============================================================
+
 - en: Plurality
   ja: プルラリティ
   notes: 本 wiki の eponymous concept。ja 訳語として「多元性」も使われるが、書籍ではカタカナ「プルラリティ」を採用。
+
+# ============================================================
+# Both-sided (lineage and foils, Sections 2–3)
+# ============================================================
+
+- en: Connected-Society
+  ja: つながった社会
+- en: The-Lost-Dao
+  ja: 失われた道
+- en: Monist-Atomism
+  ja: 一元論的アトム主義
+- en: Narrow-Corridor
+  ja: 狭い回廊
+- en: Technocracy
+  ja: テクノクラシー
+- en: Libertarianism
+  ja: リバタリアニズム
+
+# ============================================================
+# Both-sided (Section 5 mechanisms)
+# ============================================================
+
+- en: Collaborative-Technology-and-Democracy
+  ja: 社会的差異を超えたコラボレーションのための技術
+  notes: JA のタイトルは「社会的差異を超えた」を明示的に含み、EN「Collaborative Technology and Democracy」よりも目的を narrower に絞った文節化になっている。
+- en: Post-Symbolic-Communication
+  ja: ポスト表象コミュニケーション
+- en: Immersive-Shared-Reality
+  ja: 没入型共有現実
+- en: Creative-Collaborations
+  ja: クリエイティブなコラボレーション
+- en: Augmented-Deliberation
+  ja: 拡張熟議
+- en: Adaptive-Administration
+  ja: 適応型管理行政
+- en: Plural-Voting
+  ja: 多元投票
+- en: Quadratic-Voting
+  ja: クアドラティック投票
+- en: Quadratic-Funding
+  ja: クアドラティック資金調達
+- en: Liquid-Democracy
+  ja: 液体民主主義
+- en: Social-Markets
+  ja: 社会市場
+- en: Data-Coalitions
+  ja: データ連合
+- en: Plural-Management-Protocol
+  ja: ⿻管理プロトコル
+- en: Generative-Foundation-Models
+  ja: GFM
+  notes: JA 側は acronym のみで page を立てており、EN の full-form "Generative Foundation Models" に対応。日本語コミュニティでは acronym 定着が早い傾向。
+
+# ============================================================
+# Both-sided (broader concepts)
+# ============================================================
+
+- en: Digital-Democracy
+  ja: デジタル民主主義
+- en: AGI
+  ja: AGI
+
+# ============================================================
+# EN only (ja: ~) — Section 4 chapters not promoted to JA concept pages
+# ============================================================
+
+- en: Identity-and-Personhood
+  ja: ~
+- en: Association-and-Plural-Publics
+  ja: ~
+- en: Commerce-and-Trust
+  ja: ~
+- en: Property-and-Contract
+  ja: ~
+- en: Access
+  ja: ~
+
+# ============================================================
+# EN only (ja: ~) — other
+# ============================================================
+
+- en: Policy
+  ja: ~
+  notes: Section 7 の章タイトル。EN 側は概念ページ化、JA 側は章節リンクとして残り独立ページ化していない。
+- en: Tridemism
+  ja: ~
+  notes: 孫文の三民主義に由来する書籍中の用語。EN 側で独立ページ、JA 側では本文中の言及にとどまる。
+- en: Sunflower-Movement
+  ja: ~
+- en: Digital-Public-Infrastructure
+  ja: ~
+- en: Cybernetics
+  ja: ~
+- en: Surveillance-Capitalism
+  ja: ~
+- en: Network-State
+  ja: ~
+- en: Futarchy
+  ja: ~
+- en: Universal-Basic-Income
+  ja: ~
+
+# ============================================================
+# JA only (en: ~) — Suzuki Ken–derived lineage
+# ============================================================
+
+- en: ~
+  ja: なめらかな社会とその敵
+  notes: 鈴木健 (2013) の著書。Plurality 本日本語版で「双子の書籍」と位置づけられた。EN 側に dedicated ページなし。
+- en: ~
+  ja: 分人
+  notes: 平野啓一郎 / 鈴木健経由の概念。Plurality 本日本語版 5-6 多元投票の脚注で関連が明示された。
+- en: ~
+  ja: 分人民主主義
+  notes: 分人を基礎にした民主主義思想。鈴木健由来で EN 本文に dedicated 概念がない。
+- en: ~
+  ja: PICSY
+  notes: 鈴木健の貨幣システム。Plurality 本日本語版で言及される。
+
+# ============================================================
+# JA only (en: ~) — Japan-specific
+# ============================================================
+
+- en: ~
+  ja: デジタル民主主義 2030
+  notes: 2025 年に安野貴博と鈴木健が立ち上げた日本独自プロジェクト。Plurality 本日本語版で言及。
+- en: ~
+  ja: ブロードリスニング
+  notes: 安野貴博の 2024 年東京都知事選キャンペーンで使われた手法。Plurality 本日本語版に事例として組み込まれている。Talk to the City を用いる。
+- en: ~
+  ja: 日本語コミュニティ
+  notes: Plurality 本日本語版周辺の翻訳・解説コミュニティを概念化したもの。
+
+# ============================================================
+# JA only (en: ~) — loanword / translation artifacts
+# ============================================================
+
+- en: ~
+  ja: 數位
+  notes: 唐鳳の中国語キーワード。EN 本文では頻出するが dedicated 概念ページにならず、用語のまま扱われる。JA 側は中文をそのまま見出しに採用。
+- en: ~
+  ja: 玉山からの眺め
+  notes: Plurality 本第 2-1 章のタイトル。JA 側は独立 concept ページ化、EN は同タイトル章節として参照されるのみ。
+
+# ============================================================
+# JA only (en: ~) — role noun split from ideology noun
+# ============================================================
+
+- en: ~
+  ja: テクノクラート
+  notes: EN 側は ideology の Technocracy のみページ化。JA 側は role noun テクノクラート と ideology テクノクラシー を別ページに分けている。
+- en: ~
+  ja: リバタリアン
+  notes: EN 側は ideology の Libertarianism のみページ化。JA 側は role noun リバタリアン と ideology リバタリアニズム を別ページに分けている。
+
+# ============================================================
+# JA only (en: ~) — concepts EN may mention but doesn't promote
+# ============================================================
+
+- en: ~
+  ja: DAO
+  notes: EN 側では Network-State 等の文脈で言及されるが dedicated 概念ページなし。
+- en: ~
+  ja: ステークホルダー企業
+- en: ~
+  ja: スーパーモジュラリティ
+- en: ~
+  ja: デュベルジェの法則
+- en: ~
+  ja: 反社会
+- en: ~
+  ja: 中央集権
+- en: ~
+  ja: 国家
+- en: ~
+  ja: 資本主義
