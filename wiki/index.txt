@@ -3,6 +3,11 @@
 # Format: <stem>\t<type>\t<path>\t<summary>
 # Regenerate: python3 scripts/build_index_txt.py
 
+augmented-deliberation-examples	analysis	analyses/augmented-deliberation-examples.md	拡張熟議 / Augmented-Deliberation は両言語で同じ章 (5-4) を出典とするが、JA は安野貴博の 2024 東京都知事選を主要事例セクションとして据え、EN は bridging algorithms の理論と選抜方法 (election / sortition / administration) の三項対立を引く。同じ概念に対する代表例の選び方が違う。
 japan-reverse-import	analysis	analyses/japan-reverse-import.md	安野貴博の 2024 年東京都知事選キャンペーンで使われたブロードリスニング (Talk to the City) が、本書日本語版の本文に逆輸入された。原書執筆後に発生した日本コミュニティの実践が、翻訳プロセスで本書を extend した例。
+loanword-retention-patterns	analysis	analyses/loanword-retention-patterns.md	山形浩生訳の語彙選択を見ると、Plurality 本日本語版は概念ごとに loanword をカタカナで残すか、日本語に翻訳するかを系統的に選び分けている。残される語と訳される語の分かれ目に pattern がある。同じ概念の名前付けが両言語で違うことが、概念空間の文節を駆動している例。
+plural-voting-lineages	analysis	analyses/plural-voting-lineages.md	多元投票 / Plural-Voting は両 wiki で同じ章 (5-6) を典拠とするが、JA は分人民主主義 (鈴木健) を主要セクションとして据え、EN は Amartya Sen / Arrow の不可能性定理を冒頭で引く。同じ概念に対する理論的祖先の選び方が違う。
+plurality-definition-framings	analysis	analyses/plurality-definition-framings.md	プルラリティ / Plurality の両 page は同じ 3 部定義 (Arendt / Allen / Tang) を共有するが、JA は鈴木健の解説経由で「広い射程」(身体的・感覚的差異を含む) を Open Question 化し、EN は Mandarin 數位 のダブルミーニング (digital + plural) を definition の中核に据える。同じ概念の境界線が言語ごとに微妙に違う。
+quadratic-voting-framings	analysis	analyses/quadratic-voting-framings.md	クアドラティック投票 / Quadratic-Voting は両 wiki で同じメカニズム (n² コスト) を扱うが、JA は鈴木健の summary (1/5/25 クレジット例) と Civilization VI の引用を冒頭に据え、EN は JCR Licklider の信号検出理論 (√N) を「なぜ平方なのか」の説明に据える。説明の重心が違う。
 role-vs-ideology-noun-split	analysis	analyses/role-vs-ideology-noun-split.md	JA wiki は role noun (テクノクラート / リバタリアン) と ideology noun (テクノクラシー / リバタリアニズム) を別の concept page に分けている。EN wiki は ideology side のみ。日本語の loanword 形態が概念空間の文節化を駆動している例。
 suzuki-ken-lineage	analysis	analyses/suzuki-ken-lineage.md	JA wiki は鈴木健由来の concept page を 4 つ持ち、EN 側に対応する dedicated 概念がない。JA 概念空間が独自に持つ理論系譜。

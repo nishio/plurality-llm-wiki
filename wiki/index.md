@@ -38,6 +38,16 @@
 
 言語間で発見された文節化の差異を ad-hoc に記録していく場所。仮説検証は実運用の結果として自然に貯まることを期待し、無理に先取りしない。
 
-- [[suzuki-ken-lineage]] — 鈴木健由来の 4 concept page (なめらかな社会とその敵 / 分人 / 分人民主主義 / PICSY) が JA 固有の理論系譜を形成
+### 同じ概念の文節境界 / 説明が違う
+
 - [[role-vs-ideology-noun-split]] — テクノクラート vs テクノクラシー、リバタリアン vs リバタリアニズム — 日本語の外来語形態が concept space の文節化を駆動
+- [[plural-voting-lineages]] — 多元投票 / Plural-Voting: JA は分人民主主義 (鈴木健) を主要セクションに、EN は Amartya Sen / Arrow 不可能性定理を冒頭に
+- [[augmented-deliberation-examples]] — 拡張熟議 / Augmented-Deliberation: JA は安野貴博 2024 都知事選を canonical example に、EN は bridging algorithms 理論を主要セクションに
+- [[quadratic-voting-framings]] — クアドラティック投票 / Quadratic-Voting: JA は鈴木健の 1/5/25 クレジット例で導入、EN は Licklider 信号検出理論で "なぜ二乗か" を justify
+- [[plurality-definition-framings]] — プルラリティ / Plurality: JA は鈴木健経由で身体的・感覚的差異まで含む射程拡張を Open Question 化、EN は Mandarin 數位 のダブルミーニングを definition の中核に
+- [[loanword-retention-patterns]] — 山形浩生訳が概念ごとに loanword 残し / 翻訳を選び分けるパターン (プルラリティ / クアドラティック投票はカタカナ、多元投票 / 液体民主主義は訳す)
+
+### 言語コミュニティ固有の lineage (記録のみ、carving 差ではない)
+
+- [[suzuki-ken-lineage]] — 鈴木健由来の 4 concept page (なめらかな社会とその敵 / 分人 / 分人民主主義 / PICSY) が JA 固有の理論系譜を形成
 - [[japan-reverse-import]] — 安野貴博の 2024 東京都知事選由来のブロードリスニングが本書日本語版に逆輸入された pattern

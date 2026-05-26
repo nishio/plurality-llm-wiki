@@ -3,4 +3,5 @@
 # Format: <YYYY-MM-DD HH:MM>\t<type>\t<title>
 # Regenerate: python3 scripts/refresh_logs.py
 
+2026-05-26 22:30	filing-back	同じ概念の文節境界 / 説明差を扱う 5 analysis を追加
 2026-05-26 21:00	filing-back	子 wiki の ingest と correspondences.yaml 整備から得た cross-language carving observations
