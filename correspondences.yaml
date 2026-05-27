@@ -181,10 +181,10 @@
 # JA only (en: ~) — Suzuki Ken–derived lineage
 # ============================================================
 
-- en: ~
+- en: Nameraka-Society
   ja: なめらかな社会とその敵
   zh-tw: ~
-  notes: 鈴木健 (2013) の著書。Plurality 本日本語版で「双子の書籍」と位置づけられた。EN / zh 側に dedicated ページなし。
+  notes: 鈴木健 (2013) の著書。Plurality 本日本語版で「双子の書籍」と位置づけられた。2024-12 に upstream EN manuscript の Section 3-3 "The Lost Dao" に「Quality Control and Nameraka Society」という 37 行の新規 sub-section として逆統合され (PR #1055)、EN wiki 側にも独立 concept ページが成立した。Wiener → Deming → JUSE → Toyota PDCA → Kauffman → 鈴木健 の系譜。zh-tw 側にはまだ dedicated ページなし。
 - en: ~
   ja: 分人
   zh-tw: 分人
@@ -224,8 +224,8 @@
   notes: "唐鳳の中国語キーワード。EN 本文では頻出するが dedicated 概念ページにならず、用語のまま扱われる。JA 側は中文をそのまま見出しに採用。zh と ja の字形が完全一致。kanji-bridge の典型例で、本来は「en: void / ja-zh: identical」という非対称構造。"
 - en: ~
   ja: 玉山からの眺め
-  zh-tw: 玉山觀點
-  notes: Plurality 本第 2-1 章のタイトル。JA は「玉山」を直接 borrow し「からの眺め」を付加、zh は「觀點」で締める。共通の漢字「玉山」が ja-zh の bridge になっている。
+  zh-tw: 玉山視野
+  notes: Plurality 本第 2-1 章のタイトル。本書中文版は「玉山視野」(zh-tw subagent が book から確認)。JA は「玉山」を直接 borrow し「からの眺め」を付加。共通の漢字「玉山」が ja-zh の bridge になっている。
 
 # ============================================================
 # JA only (en: ~) — role noun split from ideology noun
