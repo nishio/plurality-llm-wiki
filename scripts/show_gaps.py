@@ -7,8 +7,11 @@ Reads ../correspondences.yaml and the concept pages under each child wiki
   2. Unmapped concept pages: pages that exist in a child wiki but appear in no
      correspondences.yaml row (review candidates — either add a row or mark
      other languages explicitly as ~)
-  3. Dangling references: titles in correspondences.yaml that do not match any
-     existing concept page in the corresponding child wiki
+  3. Pending pages: titles in correspondences.yaml that have no corresponding
+     concept page in the child wiki yet — this is the normal sparse state when
+     the registry runs ahead of child-wiki ingest, not an error. Each entry is
+     a TODO for future ingest (or a candidate to retract to ~ if the
+     annotation turns out unverifiable).
 
 Usage: python3 scripts/show_gaps.py
 """
@@ -103,21 +106,24 @@ def main() -> int:
         print("  (all concept pages are referenced)")
     print()
 
-    # 3. Dangling references
+    # 3. Pending pages (registry-ahead state, not an error)
     print("=" * 60)
-    print("# Dangling references (correspondences.yaml points to non-existent page)")
+    print("# Pending pages (registry references a not-yet-created child-wiki page)")
     print("=" * 60)
-    any_dangling = False
+    print("# Sparse coverage — registry annotations awaiting ingest. Each item")
+    print("# is a TODO (create the page) or a candidate to retract to ~ (if")
+    print("# the annotation cannot be verified in actual discourse).")
+    any_pending = False
     for lang in langs:
         pages = child_concept_titles(lang)
-        dangling = sorted(referenced[lang] - pages)
-        if dangling:
-            any_dangling = True
-            print(f"  [{lang}] {len(dangling)} reference(s):")
-            for d in dangling:
-                print(f"    - {d}")
-    if not any_dangling:
-        print("  (all references resolve)")
+        pending = sorted(referenced[lang] - pages)
+        if pending:
+            any_pending = True
+            print(f"  [{lang}] {len(pending)} reference(s):")
+            for p in pending:
+                print(f"    - {p}")
+    if not any_pending:
+        print("  (every registry annotation has a corresponding child-wiki page)")
     print()
 
     return 0
