@@ -2,9 +2,11 @@
 
 [日本語版 README](README.ja.md)
 
-A multilingual **wiki森** ("wiki forest") that hosts each language's Plurality discourse as an autonomous wiki, and observes how the same conceptual space gets carved differently across languages.
+A multilingual **wiki forest** that hosts each language's Plurality discourse as an autonomous wiki, and observes how the same conceptual space gets carved differently across languages.
 
-> Wikipedia *observes* interlanguage differences in how concepts are carved, but does not *analyze* them. This wiki森 also analyzes.
+> Wikipedia *observes* interlanguage differences in how concepts are carved, but does not *analyze* them. This wiki forest also analyzes.
+
+A "wiki forest" (Japanese: *wiki森*) is a collection of independently administered wikis that grow side-by-side rather than as translations of one canonical source. Each wiki is its own tree — autonomous, with its own contributors and editorial choices — and the forest is the space where they coexist and where cross-tree observations become possible.
 
 **Live site:** https://nishio.github.io/plurality-llm-wiki/
 

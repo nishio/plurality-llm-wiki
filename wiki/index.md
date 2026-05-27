@@ -10,6 +10,7 @@
 
 - [plurality-llm-wiki-en](https://github.com/nishio/plurality-llm-wiki-en) — 英語 Plurality 言説の概念
 - [plurality-llm-wiki-ja](https://github.com/nishio/plurality-llm-wiki-ja) — 日本語 Plurality 言説の概念
+- [plurality-llm-wiki-zh-tw](https://github.com/nishio/plurality-llm-wiki-zh-tw) — 繁体中文 (台湾) 多元宇宙論述の概念
 
 新言語を追加するには、`plurality-llm-wiki-<lang>` 命名で独立 repo を作り、本 repo の `correspondences.yaml` に該当言語 column を追加する。
 
@@ -28,11 +29,15 @@
 
 ## Concepts
 
-(meta-wiki なので、個別概念は子 wiki 側に住む)
+(meta-wiki なので、個別概念は子 wiki 側に住む。ここに置くのは本 architecture 自体を説明するメタ概念のみ)
+
+- [[wiki-forest]] — 本 repo の architecture 名。各言語 wiki を独立した「木」として並存させ、森全体を横断観察の対象とする多言語 wiki 設計。
 
 ## Entities
 
 ## Sources
+
+- [[words-as-public-goods-lt]] — 西尾 LT「Words as Public Goods / 公共財としての言葉」(2024-01-03, Plurality Tokyo "Glen in Japan")。本 wiki 森の発想の根底。
 
 ## Analyses
 
@@ -46,8 +51,10 @@
 - [[quadratic-voting-framings]] — クアドラティック投票 / Quadratic-Voting: JA は鈴木健の 1/5/25 クレジット例で導入、EN は Licklider 信号検出理論で "なぜ二乗か" を justify
 - [[plurality-definition-framings]] — プルラリティ / Plurality: JA は鈴木健経由で身体的・感覚的差異まで含む射程拡張を Open Question 化、EN は Mandarin 數位 のダブルミーニングを definition の中核に
 - [[loanword-retention-patterns]] — 山形浩生訳が概念ごとに loanword 残し / 翻訳を選び分けるパターン (プルラリティ / クアドラティック投票はカタカナ、多元投票 / 液体民主主義は訳す)
+- [[kanji-as-ja-zh-bridge]] — correspondences.yaml に zh annotation を加えると ja-zh 対応 (39) は en-ja (23) より dense、さらに 11 entries で直接 kanji を共有する。words-as-public-goods LT のテーゼ検証
 
 ### 言語コミュニティ固有の lineage (記録のみ、carving 差ではない)
 
 - [[suzuki-ken-lineage]] — 鈴木健由来の 4 concept page (なめらかな社会とその敵 / 分人 / 分人民主主義 / PICSY) が JA 固有の理論系譜を形成
 - [[japan-reverse-import]] — 安野貴博の 2024 東京都知事選由来のブロードリスニングが本書日本語版に逆輸入された pattern
+- [[push-asymmetry-activity-vs-word]] — cross-language push は activity(低コスト, 先) と word(高コスト, 事後) で非対称。活動が articulate 不足を露呈した後に word 借入が起こる仮説

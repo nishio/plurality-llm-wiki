@@ -13,6 +13,17 @@
 # Maintenance: after ingest creates a new concept page, either add a row here
 # (or extend an existing row with a sibling-language correspondence), or
 # explicitly mark the other languages as ~ to record the gap.
+#
+# About the `zh-tw` column:
+#   Added 2026-05-27 as an experimental annotation. The Plurality book is
+#   originally bilingual en/zh (Traditional Chinese, i.e. zh-tw) so most book
+#   concepts have zh-tw terms drawn from the Mandarin edition. Child wiki
+#   `plurality-llm-wiki-zh-tw` exists on GitHub with seed pages (1 source +
+#   1 concept). The column lets us test the hypothesis (from the
+#   words-as-public-goods LT, 2024-01) that ja-zh-tw correspondences are
+#   denser than en-ja via shared kanji. See analyses/kanji-as-ja-zh-bridge
+#   (the analysis filename retains "zh" since kanji-bridging is a property of
+#   the Chinese script family, not specifically Taiwan).
 
 # ============================================================
 # Core
@@ -20,7 +31,8 @@
 
 - en: Plurality
   ja: プルラリティ
-  notes: 本 wiki の eponymous concept。ja 訳語として「多元性」も使われるが、書籍ではカタカナ「プルラリティ」を採用。
+  zh-tw: 多元
+  notes: 本 wiki の eponymous concept。ja 訳語として「多元性」も使われるが、書籍ではカタカナ「プルラリティ」を採用。zh は 多元 / 多元宇宙 / 多元性 が併用される。
 
 # ============================================================
 # Both-sided (lineage and foils, Sections 2–3)
@@ -28,16 +40,22 @@
 
 - en: Connected-Society
   ja: つながった社会
+  zh-tw: 連結社會
 - en: The-Lost-Dao
   ja: 失われた道
+  zh-tw: 失落之道
 - en: Monist-Atomism
   ja: 一元論的アトム主義
+  zh-tw: 一元原子論
 - en: Narrow-Corridor
   ja: 狭い回廊
+  zh-tw: 狹窄走廊
 - en: Technocracy
   ja: テクノクラシー
+  zh-tw: 技術專家治理
 - en: Libertarianism
   ja: リバタリアニズム
+  zh-tw: 自由意志主義
 
 # ============================================================
 # Both-sided (Section 5 mechanisms)
@@ -45,34 +63,52 @@
 
 - en: Collaborative-Technology-and-Democracy
   ja: 社会的差異を超えたコラボレーションのための技術
-  notes: JA のタイトルは「社会的差異を超えた」を明示的に含み、EN「Collaborative Technology and Democracy」よりも目的を narrower に絞った文節化になっている。
+  zh-tw: 協作技術與民主
+  notes: JA のタイトルは「社会的差異を超えた」を明示的に含み、EN「Collaborative Technology and Democracy」よりも目的を narrower に絞った文節化になっている。zh は本書 5-0 章の見出しの直訳。
 - en: Post-Symbolic-Communication
   ja: ポスト表象コミュニケーション
+  zh-tw: 後符號溝通
 - en: Immersive-Shared-Reality
   ja: 没入型共有現実
+  zh-tw: 沉浸式共享現實
 - en: Creative-Collaborations
   ja: クリエイティブなコラボレーション
+  zh-tw: 創意協作
 - en: Augmented-Deliberation
   ja: 拡張熟議
+  zh-tw: 增強審議
 - en: Adaptive-Administration
   ja: 適応型管理行政
+  zh-tw: 自適應行政
 - en: Plural-Voting
   ja: 多元投票
+  zh-tw: 多元投票
+  notes: ja と zh が完全に同一の漢字熟語。kanji-as-bridge の strongest case。
 - en: Quadratic-Voting
   ja: クアドラティック投票
+  zh-tw: 平方投票
+  notes: ja は katakana loanword (EN ベース)、zh は漢字翻訳 (平方=quadratic)。山形浩生訳は zh 経路 (平方投票) を採らず EN 経路を採った例。
 - en: Quadratic-Funding
   ja: クアドラティック資金調達
+  zh-tw: 平方融資
 - en: Liquid-Democracy
   ja: 液体民主主義
+  zh-tw: 流動民主
+  notes: 同じ Liquid を ja は「液体」(物理メタファー的)、zh は「流動」(動的メタファー的) と訳す。
 - en: Social-Markets
   ja: 社会市場
+  zh-tw: 社會市場
+  notes: ja と zh の字形差は「社会↔社會」(新字体↔繁體字) のみ、意味は完全に同一。
 - en: Data-Coalitions
   ja: データ連合
+  zh-tw: 數據聯盟
 - en: Plural-Management-Protocol
   ja: ⿻管理プロトコル
+  zh-tw: ⿻管理協定
 - en: Generative-Foundation-Models
   ja: GFM
-  notes: JA 側は acronym のみで page を立てており、EN の full-form "Generative Foundation Models" に対応。日本語コミュニティでは acronym 定着が早い傾向。
+  zh-tw: 生成式基礎模型
+  notes: JA 側は acronym のみで page を立てており、EN の full-form "Generative Foundation Models" に対応。日本語コミュニティでは acronym 定着が早い傾向。zh は full-form 翻訳。
 
 # ============================================================
 # Both-sided (broader concepts)
@@ -80,8 +116,11 @@
 
 - en: Digital-Democracy
   ja: デジタル民主主義
+  zh-tw: 數位民主
+  notes: ja は katakana loanword、zh は「數位」(Tang の概念) を使う。本書のテーゼ「digital と plural を同じ語で語る」が zh で最も直接に成立する。
 - en: AGI
   ja: AGI
+  zh-tw: 通用人工智慧
 
 # ============================================================
 # EN only (ja: ~) — Section 4 chapters not promoted to JA concept pages
@@ -89,14 +128,20 @@
 
 - en: Identity-and-Personhood
   ja: ~
+  zh-tw: 身分認證
 - en: Association-and-Plural-Publics
   ja: ~
+  zh-tw: 結社與多元公眾
 - en: Commerce-and-Trust
   ja: ~
+  zh-tw: 商業與信任
 - en: Property-and-Contract
   ja: ~
+  zh-tw: 財產與契約
 - en: Access
   ja: ~
+  zh-tw: 近用
+  notes: zh の "近用" は Taiwan の標準的訳語で、access が「近づいて使う」のニュアンスを保つ。
 
 # ============================================================
 # EN only (ja: ~) — other
@@ -104,24 +149,33 @@
 
 - en: Policy
   ja: ~
+  zh-tw: 政策
   notes: Section 7 の章タイトル。EN 側は概念ページ化、JA 側は章節リンクとして残り独立ページ化していない。
 - en: Tridemism
   ja: ~
-  notes: 孫文の三民主義に由来する書籍中の用語。EN 側で独立ページ、JA 側では本文中の言及にとどまる。
+  zh-tw: 三民主義
+  notes: 孫文の三民主義に由来する書籍中の用語。EN 側で独立ページ、JA 側では本文中の言及にとどまる。zh が真の原語で、EN "Tridemism" は逆方向の翻訳語。
 - en: Sunflower-Movement
   ja: ~
+  zh-tw: 太陽花運動
 - en: Digital-Public-Infrastructure
   ja: ~
+  zh-tw: 數位公共基礎建設
 - en: Cybernetics
   ja: ~
+  zh-tw: 控制論
 - en: Surveillance-Capitalism
   ja: ~
+  zh-tw: 監控資本主義
 - en: Network-State
   ja: ~
+  zh-tw: 網路國家
 - en: Futarchy
   ja: ~
+  zh-tw: 預測式治理
 - en: Universal-Basic-Income
   ja: ~
+  zh-tw: 無條件基本收入
 
 # ============================================================
 # JA only (en: ~) — Suzuki Ken–derived lineage
@@ -129,16 +183,20 @@
 
 - en: ~
   ja: なめらかな社会とその敵
-  notes: 鈴木健 (2013) の著書。Plurality 本日本語版で「双子の書籍」と位置づけられた。EN 側に dedicated ページなし。
+  zh-tw: ~
+  notes: 鈴木健 (2013) の著書。Plurality 本日本語版で「双子の書籍」と位置づけられた。EN / zh 側に dedicated ページなし。
 - en: ~
   ja: 分人
-  notes: 平野啓一郎 / 鈴木健経由の概念。Plurality 本日本語版 5-6 多元投票の脚注で関連が明示された。
+  zh-tw: 分人
+  notes: 平野啓一郎 / 鈴木健経由の概念。漢字「分人」は zh でも字面読解可能で kanji-bridge が成立する候補。Plurality 本日本語版 5-6 多元投票の脚注で関連が明示された。
 - en: ~
   ja: 分人民主主義
-  notes: 分人を基礎にした民主主義思想。鈴木健由来で EN 本文に dedicated 概念がない。
+  zh-tw: 分人民主主義
+  notes: 分人を基礎にした民主主義思想。鈴木健由来で EN 本文に dedicated 概念がない。zh は字面で読解可能。
 - en: ~
   ja: PICSY
-  notes: 鈴木健の貨幣システム。Plurality 本日本語版で言及される。
+  zh-tw: PICSY
+  notes: 鈴木健の貨幣システム。Plurality 本日本語版で言及される。acronym なので zh でもそのまま使われる。
 
 # ============================================================
 # JA only (en: ~) — Japan-specific
@@ -146,13 +204,15 @@
 
 - en: ~
   ja: デジタル民主主義 2030
+  zh-tw: ~
   notes: 2025 年に安野貴博と鈴木健が立ち上げた日本独自プロジェクト。Plurality 本日本語版で言及。
 - en: ~
   ja: ブロードリスニング
-  notes: 安野貴博の 2024 年東京都知事選キャンペーンで使われた手法。Plurality 本日本語版に事例として組み込まれている。Talk to the City を用いる。
+  zh-tw: 廣泛聆聽
+  notes: 安野貴博の 2024 年東京都知事選キャンペーンで使われた手法。Plurality 本日本語版に事例として組み込まれている。Talk to the City を用いる。zh では「廣聴」「廣泛聆聽」が訳語候補。
 - en: ~
   ja: 日本語コミュニティ
-  notes: Plurality 本日本語版周辺の翻訳・解説コミュニティを概念化したもの。
+  zh-tw: ~
 
 # ============================================================
 # JA only (en: ~) — loanword / translation artifacts
@@ -160,10 +220,12 @@
 
 - en: ~
   ja: 數位
-  notes: 唐鳳の中国語キーワード。EN 本文では頻出するが dedicated 概念ページにならず、用語のまま扱われる。JA 側は中文をそのまま見出しに採用。
+  zh-tw: 數位
+  notes: "唐鳳の中国語キーワード。EN 本文では頻出するが dedicated 概念ページにならず、用語のまま扱われる。JA 側は中文をそのまま見出しに採用。zh と ja の字形が完全一致。kanji-bridge の典型例で、本来は「en: void / ja-zh: identical」という非対称構造。"
 - en: ~
   ja: 玉山からの眺め
-  notes: Plurality 本第 2-1 章のタイトル。JA 側は独立 concept ページ化、EN は同タイトル章節として参照されるのみ。
+  zh-tw: 玉山觀點
+  notes: Plurality 本第 2-1 章のタイトル。JA は「玉山」を直接 borrow し「からの眺め」を付加、zh は「觀點」で締める。共通の漢字「玉山」が ja-zh の bridge になっている。
 
 # ============================================================
 # JA only (en: ~) — role noun split from ideology noun
@@ -171,10 +233,12 @@
 
 - en: ~
   ja: テクノクラート
-  notes: EN 側は ideology の Technocracy のみページ化。JA 側は role noun テクノクラート と ideology テクノクラシー を別ページに分けている。
+  zh-tw: 技術官僚
+  notes: EN 側は ideology の Technocracy のみページ化。JA 側は role noun テクノクラート と ideology テクノクラシー を別ページに分けている。zh も役職名 (技術官僚) を ideology (技術專家治理) と分けて呼ぶ慣行があり、JA の split は zh と structure を共有する。
 - en: ~
   ja: リバタリアン
-  notes: EN 側は ideology の Libertarianism のみページ化。JA 側は role noun リバタリアン と ideology リバタリアニズム を別ページに分けている。
+  zh-tw: 自由意志主義者
+  notes: EN 側は ideology の Libertarianism のみページ化。JA 側は role noun リバタリアン と ideology リバタリアニズム を別ページに分けている。zh は -者 の付加で role と区別する慣行で同 structure。
 
 # ============================================================
 # JA only (en: ~) — concepts EN may mention but doesn't promote
@@ -182,18 +246,30 @@
 
 - en: ~
   ja: DAO
-  notes: EN 側では Network-State 等の文脈で言及されるが dedicated 概念ページなし。
+  zh-tw: 去中心化自治組織
+  notes: EN 側では Network-State 等の文脈で言及されるが dedicated 概念ページなし。zh は acronym のままも、full-form 翻訳も併用。
 - en: ~
   ja: ステークホルダー企業
+  zh-tw: 利害關係人企業
 - en: ~
   ja: スーパーモジュラリティ
+  zh-tw: 超模性
 - en: ~
   ja: デュベルジェの法則
+  zh-tw: 杜瓦傑法則
 - en: ~
   ja: 反社会
+  zh-tw: 反社會
+  notes: 字形差は「会↔會」のみ、意味同一。
 - en: ~
   ja: 中央集権
+  zh-tw: 中央集權
+  notes: 字形差は「権↔權」のみ、意味同一。
 - en: ~
   ja: 国家
+  zh-tw: 國家
+  notes: 字形差は「国↔國」のみ、意味同一。
 - en: ~
   ja: 資本主義
+  zh-tw: 資本主義
+  notes: 字形完全一致。
