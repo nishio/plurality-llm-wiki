@@ -3,7 +3,18 @@
 > 直近 7 日分のみ。全件 compact 履歴は [log.txt](log.txt)、それより古い entry の詳細は `git log -- wiki/log.md` で参照。
 > 更新は `python3 scripts/refresh_logs.py` で log.txt と log.md を再生成する。
 
+## [2026-05-27 15:30] sync | correspondences.yaml の 2 件 naming follow-up
+
+
+子 wiki の今回 ingest で発生した naming 整合性を反映:
+
+- `なめらかな社会とその敵` の `en` を `~` → `Nameraka-Society` に更新。本書 upstream PR #1055 (2024-12-21) で 3-3 章「Quality Control and Nameraka Society」として 37 行の新規 sub-section に逆統合済み (EN wiki も page あり)
+- `玉山からの眺め` の `zh-tw` を `玉山觀點` → `玉山視野` に修正。本書中文版の実際の章タイトルは「玉山視野」(zh-tw subagent が book から確認)
+
+残る 28 件の zh-tw dangling refs (`身分認證` vs `身分與人格權` 等の訳語差) は別タスクとして残置。
+
 ## [2026-05-27 13:30] ingest | zh-tw 子 wiki を新規 scaffold (filesystem のみ)
+
 
 
 
@@ -17,6 +28,7 @@
 並走で correspondences.yaml の `zh` column を `zh-tw` に rename (56 entries 全て)、kanji-as-ja-zh-bridge analysis 内の子 wiki 名 reference を更新。analysis 自体の filename は kanji-as-ja-zh-bridge のまま (zh = 漢字圏全体を指す総称として保持)。
 
 ## [2026-05-27 13:00] analysis | correspondences.yaml に zh 列を annotate、kanji-as-ja-zh-bridge を filing
+
 
 
 
@@ -36,9 +48,11 @@ words-as-public-goods LT (2024-01) が残した Open Question「zh 列を追加�
 
 
 
+
 英語 README に紛れていた「wiki森」(英語読者には読めない) を `wiki forest` に置換し、forest metaphor の 1 段落説明を追加。同時に本 architecture のメタ概念として [[wiki-forest]] を `wiki/concepts/` に新規作成 (parent concepts/ の初ページ)。木 = 各言語独立 wiki、forest = 横断観察の場、`correspondences.yaml` = 森の地図、`analyses/` = 観察記録 という分解を明示し、Wikipedia の interlanguage link との差別化点 (対応欠落を first-class observable 化 / 差異を分析対象化) を整理。
 
 ## [2026-05-27 11:30] filing-back | push の非対称性 (activity vs word) を analysis 化
+
 
 
 
@@ -62,11 +76,13 @@ words-as-public-goods LT (2024-01) が残した Open Question「zh 列を追加�
 
 
 
+
 本 multilingual wiki 森 architecture の発想の根底である西尾 LT「Words as Public Goods / 公共財としての言葉」(2024-01-03, Plurality Tokyo "Glen in Japan") を [[words-as-public-goods-lt]] として sources/ に追加。
 
 CC-0 license の Scrapbox ページから論証チェーン (Plurality ↔ チームワークあふれる社会、二言語の道としての漢字、納得型 void、日本語話者のマイノリティとしての公共財輸出) を抽出し、本 wiki 森 architecture との対応 (`correspondences.yaml` の `~` = void、`analyses/` で文節化差を分析する設計) を明示。
 
 ## [2026-05-26 22:30] filing-back | 同じ概念の文節境界 / 説明差を扱う 5 analysis を追加
+
 
 
 
@@ -87,6 +103,7 @@ CC-0 license の Scrapbox ページから論証チェーン (Plurality ↔ チ�
 なお既存 [[suzuki-ken-lineage]] と [[japan-reverse-import]] は「同じ概念の境界差」ではなく「JA 固有 lineage 記録」として index.md でセクション分離。
 
 ## [2026-05-26 21:00] filing-back | 子 wiki の ingest と correspondences.yaml 整備から得た cross-language carving observations
+
 
 
 

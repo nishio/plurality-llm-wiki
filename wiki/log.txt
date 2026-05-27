@@ -3,6 +3,7 @@
 # Format: <YYYY-MM-DD HH:MM>\t<type>\t<title>
 # Regenerate: python3 scripts/refresh_logs.py
 
+2026-05-27 15:30	sync	correspondences.yaml の 2 件 naming follow-up
 2026-05-27 13:30	ingest	zh-tw 子 wiki を新規 scaffold (filesystem のみ)
 2026-05-27 13:00	analysis	correspondences.yaml に zh 列を annotate、kanji-as-ja-zh-bridge を filing
 2026-05-27 12:00	concept	wiki-forest をメタ概念ページ化、英語 README から「wiki森」表記を除去
