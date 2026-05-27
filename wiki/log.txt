@@ -3,6 +3,7 @@
 # Format: <YYYY-MM-DD HH:MM>\t<type>\t<title>
 # Regenerate: python3 scripts/refresh_logs.py
 
+2026-05-27 16:30	filing-back	registry と child wiki の双方向遅延 pattern を [[wiki-forest]] に追記
 2026-05-27 16:00	sync	(A) yaml の推測 fix + show_gaps.py の誤解招く label を修正
 2026-05-27 15:30	sync	correspondences.yaml の 2 件 naming follow-up
 2026-05-27 13:30	ingest	zh-tw 子 wiki を新規 scaffold (filesystem のみ)

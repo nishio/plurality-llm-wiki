@@ -60,3 +60,29 @@ Wiki forest は:
 
 - 「森」のメタファーは、各 wiki 間の interaction (栄養循環、共生関係) まで含意するか? 現状は単に「並存」しているだけで、cross-wiki の有機的 interaction は薄い。
 - 木の数が増えた場合 (N 言語)、`correspondences.yaml` の row 単位の管理は scale するか? 言語別の dense / sparse な対応 pattern を可視化する別表現が要るかもしれない。
+
+## Updates
+
+### 2026-05-27: registry と child wiki の双方向遅延 pattern
+
+運用してみると、`correspondences.yaml` (森の地図) と child wiki (木) の同期は **双方向に遅延しうる**:
+
+**Registry が child wiki より先行する (pending pages)** ケース ── `show_gaps.py` section #3:
+
+1. **新言語 column 追加直後**: 新言語 (例: `zh-tw`) を registry に追加するとき、既存 entries に対し annotation を一括で埋める。新言語の子 wiki はまだ populate されていない (or 存在すらしない)
+2. **Index / 目次先行 annotate**: 新 source (本書の章立て等) を ingest するとき、目次から全章タイトルを registry に先入力。実 page ingest は時間がかかる
+3. **Sibling 言語の予測的 annotate**: A wiki に new concept page を作った editor が、B / C wiki に同じ概念があると推測して registry に入れる (例: JA `分人` → `zh-tw: 分人` の字面読解 annotation)。実 B / C wiki page 化は後。**この pattern の annotation は弱く、後で検証が必要**
+4. **上流 source の変更を先取り**: Plurality 本 upstream で章タイトル変更 → registry を新タイトルに更新 → child wiki page rename は別タスク
+
+**Child wiki が registry より先行する (unmapped pages)** ケース ── `show_gaps.py` section #2:
+
+- ある言語 wiki が独自 concept page を作ったが registry に反映していない (例: JA wiki の鈴木健 lineage を一度に register せずページだけ先に存在した瞬間)
+
+**含意**: 両方向の遅延は **発展の偶然順序** によるもので、どちらも error ではない。むしろ:
+
+- pending = 「ここに concept があるはずだから ingest しよう」という TODO
+- unmapped = 「この page は他言語との対応をまだ考えてない」という review prompt
+
+両方が常に 0 の状態は **発展が止まっている兆候** とも読めて、定常的に少し非ゼロな方が健全。森が育っている証拠。
+
+`show_gaps.py` の label を「Dangling references」(壊れた参照のニュアンス) から「Pending pages」(register が先行している sparse 状態) に書き換えたのは、この understanding を tooling 側にも反映した変更 (parent commit `f483bd3`)。
