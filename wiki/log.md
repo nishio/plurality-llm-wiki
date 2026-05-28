@@ -3,7 +3,17 @@
 > 直近 7 日分のみ。全件 compact 履歴は [log.txt](log.txt)、それより古い entry の詳細は `git log -- wiki/log.md` で参照。
 > 更新は `python3 scripts/refresh_logs.py` で log.txt と log.md を再生成する。
 
+## [2026-05-28 11:00] filing-back | connotation asymmetry の observation を [[words-as-public-goods-lt]] に追記
+
+
+README 表記の議論 (parent `c93f384`、ja `f344c34`) で出た observation を [[words-as-public-goods-lt]] の `## Updates` として filing back:
+
+- 「wiki が見れるところ」という meta-notion をラベリングする際、JA「公開/公式サイト」は authoritative の含意を持つが、EN「Live site」/ ZH「公開網站」は中立
+- LT の中核主張は「言語の voids」(対応語がない) だったが、本事例は「対応語はあるが connotation が違う」という refinement
+- 本 wiki 森自身を書く過程で LT の理論が再帰的に体現された
+
 ## [2026-05-27 16:30] filing-back | registry と child wiki の双方向遅延 pattern を [[wiki-forest]] に追記
+
 
 
 show_gaps.py の label 議論で出た構造的 observation を [[wiki-forest]] の `## Updates` として filing back:
@@ -16,6 +26,7 @@ show_gaps.py の label 議論で出た構造的 observation を [[wiki-forest]] 
 
 
 
+
 zh-tw subagent の book 観察と yaml annotation の食い違い 2 件を修正:
 
 - `Augmented-Deliberation`: `zh-tw: 增強審議` → `擴增審議` (本書中文版 5-4 章タイトル)
@@ -24,6 +35,7 @@ zh-tw subagent の book 観察と yaml annotation の食い違い 2 件を修正
 並走で `scripts/show_gaps.py` の section #3 label を "Dangling references" → "Pending pages" に変更。"Dangling" は壊れた参照のニュアンスがあるが、実態は **registry が child wiki ingest より先行している sparse 状態** であり error ではない。各項目は将来 ingest の TODO、または検証できなければ `~` に retract できる、と明示。
 
 ## [2026-05-27 15:30] sync | correspondences.yaml の 2 件 naming follow-up
+
 
 
 
@@ -43,6 +55,7 @@ zh-tw subagent の book 観察と yaml annotation の食い違い 2 件を修正
 
 
 
+
 [[words-as-public-goods-lt]] の漢字-道 観察 + [[kanji-as-ja-zh-bridge]] の経験的 support を受けて、第 3 の言語 wiki `wikis/plurality-llm-wiki-zh-tw/` を filesystem 上に scaffold (GitHub repo は未作成):
 
 - `CLAUDE.md` / `wiki/index.md` / `wiki/log.md` を新規作成、scripts (build_index_txt / refresh_logs / lint_wiki) を ja からコピー
@@ -52,6 +65,7 @@ zh-tw subagent の book 観察と yaml annotation の食い違い 2 件を修正
 並走で correspondences.yaml の `zh` column を `zh-tw` に rename (56 entries 全て)、kanji-as-ja-zh-bridge analysis 内の子 wiki 名 reference を更新。analysis 自体の filename は kanji-as-ja-zh-bridge のまま (zh = 漢字圏全体を指す総称として保持)。
 
 ## [2026-05-27 13:00] analysis | correspondences.yaml に zh 列を annotate、kanji-as-ja-zh-bridge を filing
+
 
 
 
@@ -77,9 +91,11 @@ words-as-public-goods LT (2024-01) が残した Open Question「zh 列を追加�
 
 
 
+
 英語 README に紛れていた「wiki森」(英語読者には読めない) を `wiki forest` に置換し、forest metaphor の 1 段落説明を追加。同時に本 architecture のメタ概念として [[wiki-forest]] を `wiki/concepts/` に新規作成 (parent concepts/ の初ページ)。木 = 各言語独立 wiki、forest = 横断観察の場、`correspondences.yaml` = 森の地図、`analyses/` = 観察記録 という分解を明示し、Wikipedia の interlanguage link との差別化点 (対応欠落を first-class observable 化 / 差異を分析対象化) を整理。
 
 ## [2026-05-27 11:30] filing-back | push の非対称性 (activity vs word) を analysis 化
+
 
 
 
@@ -109,11 +125,13 @@ words-as-public-goods LT (2024-01) が残した Open Question「zh 列を追加�
 
 
 
+
 本 multilingual wiki 森 architecture の発想の根底である西尾 LT「Words as Public Goods / 公共財としての言葉」(2024-01-03, Plurality Tokyo "Glen in Japan") を [[words-as-public-goods-lt]] として sources/ に追加。
 
 CC-0 license の Scrapbox ページから論証チェーン (Plurality ↔ チームワークあふれる社会、二言語の道としての漢字、納得型 void、日本語話者のマイノリティとしての公共財輸出) を抽出し、本 wiki 森 architecture との対応 (`correspondences.yaml` の `~` = void、`analyses/` で文節化差を分析する設計) を明示。
 
 ## [2026-05-26 22:30] filing-back | 同じ概念の文節境界 / 説明差を扱う 5 analysis を追加
+
 
 
 
@@ -137,6 +155,7 @@ CC-0 license の Scrapbox ページから論証チェーン (Plurality ↔ チ�
 なお既存 [[suzuki-ken-lineage]] と [[japan-reverse-import]] は「同じ概念の境界差」ではなく「JA 固有 lineage 記録」として index.md でセクション分離。
 
 ## [2026-05-26 21:00] filing-back | 子 wiki の ingest と correspondences.yaml 整備から得た cross-language carving observations
+
 
 
 

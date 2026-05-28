@@ -104,3 +104,20 @@ sources:
 - 本 LT 時点 (2024-01) から 2 年経過し、Plurality 本最新オンライン版には日本の活動が逆輸入されている (cf. [[japan-reverse-import]]: 安野貴博 2024 都知事選由来のブロードリスニング)。ただし push されているのは「活動」── 事実 (fact) なので受け取り側は単に observe すればよく、コストが低い。一方「言葉」の push が有益であるためには、push 先言語コミュニティに **対応概念がない (void である)** ことが受け取り側にとって価値の源泉になる必要があり、void を受け止め新概念として hosting するコストは少し高い。**おそらく順序は: 活動 push が先、それを既存外国語語彙で十分に articulate しきれないことが認識され、事後的に源言語の語が借入される** ── という仮説。本 wiki 森として観察を継続する価値あり。
 - 「漢字が二言語間の道になる」という観察は en ↔ ja の plurality-llm-wiki に組み込めるか? 現在の `correspondences.yaml` は en / ja の 2 column だが、zh column を追加した場合、ja-zh 対応の方が en-ja より dense になる可能性がある (本 LT の観察の検証)。
 - void を「観察された事実」として記録する仕組みは入っているが、「void であることがなぜ価値ある観察か」を追記する場所が `analyses/` には不足。納得型の void analysis を将来書く価値あり。
+
+## Updates
+
+### 2026-05-28: connotation asymmetry — LT 仮説の再帰的事例
+
+本 wiki 森自身の README を書く過程で、LT が論じた「言語間の semantic asymmetry」の新たな形が顕在化した: **同じ notion をラベリングする語が、言語ごとに違う connotative load を背負う**。
+
+具体例:
+- 「**wiki が見れるところ**」という meta-notion をラベリングする際、
+  - JA で「公開サイト」/「公式サイト」を当てると **authoritative / official** のニュアンスが入ってしまう
+  - EN で「Live site」は中立 (running / viewable のニュアンス、authority 含意なし)
+  - ZH で「公開網站」は中立 (publicly accessible website、authority 含意薄い)
+- 修正: JA →「閲覧 URL」(viewing URL、connotation 中立)、EN →「Pages」(GitHub Pages 用語、技術的中立)、ZH → 変更なし
+
+LT の中核主張は「**言語の voids**」(= 対応語がない) だったが、本事例は **対応語はあるが connotation が違う** という refinement。Plurality 本の Plurality 概念には複数言語で語彙が存在するが、各語が背負う historical / political weight は異なる ── 同じ refinement が Plurality 概念体系内部で起きていてもおかしくない (例: en `Plurality` / zh `多元` / ja `プルラリティ` の connotative load 差を 比較分析する観察を [[loanword-retention-patterns]] が部分的に拾っている)。
+
+本 wiki 森を実際に運営して書く過程で、本 LT の理論が再帰的に体現された ── 言葉を public goods として扱うとき、その「公共財としての提示の仕方」自体が言語によって違う connotative cost を持つ、という追加層が visible になった (parent commits `c93f384` / `f344c34`)。
