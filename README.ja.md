@@ -6,7 +6,7 @@
 
 > Wikipedia は言語間の概念の文節化の差異を *observe* するが、分析はしない。この wiki森 は分析もする。
 
-**公開サイト:** https://nishio.github.io/plurality-llm-wiki/
+**閲覧 URL:** https://nishio.github.io/plurality-llm-wiki/
 
 ## なぜこの project が存在するか
 
@@ -23,10 +23,11 @@ Plurality ── Audrey Tang と E. Glen Weyl による「社会的差異を超�
 
 各言語 wiki は **独立した GitHub repo** で、別々に admin / contributor が参加できる:
 
-| Wiki | Repo | 公開サイト |
+| Wiki | Repo | 閲覧 URL |
 |---|---|---|
 | 英語 | [nishio/plurality-llm-wiki-en](https://github.com/nishio/plurality-llm-wiki-en) | https://nishio.github.io/plurality-llm-wiki-en/ |
 | 日本語 | [nishio/plurality-llm-wiki-ja](https://github.com/nishio/plurality-llm-wiki-ja) | https://nishio.github.io/plurality-llm-wiki-ja/ |
+| 繁体中文 (台湾) | [nishio/plurality-llm-wiki-zh-tw](https://github.com/nishio/plurality-llm-wiki-zh-tw) | https://nishio.github.io/plurality-llm-wiki-zh-tw/ |
 
 N 言語目への拡張は: `plurality-llm-wiki-<lang>` という repo を作り、`correspondences.yaml` にその言語 column を追加するだけ。
 

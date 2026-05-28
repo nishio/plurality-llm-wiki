@@ -8,7 +8,7 @@ A multilingual **wiki forest** that hosts each language's Plurality discourse as
 
 A "wiki forest" (Japanese: *wiki森*) is a collection of independently administered wikis that grow side-by-side rather than as translations of one canonical source. Each wiki is its own tree — autonomous, with its own contributors and editorial choices — and the forest is the space where they coexist and where cross-tree observations become possible.
 
-**Live site:** https://nishio.github.io/plurality-llm-wiki/
+**Pages:** https://nishio.github.io/plurality-llm-wiki/
 
 ## Why this exists
 
@@ -25,10 +25,11 @@ This is the **parent repo**. It holds:
 
 The language wikis are **separate GitHub repos**, each independently administered:
 
-| Wiki | Repo | Live site |
+| Wiki | Repo | Pages |
 |---|---|---|
 | English | [nishio/plurality-llm-wiki-en](https://github.com/nishio/plurality-llm-wiki-en) | https://nishio.github.io/plurality-llm-wiki-en/ |
 | Japanese | [nishio/plurality-llm-wiki-ja](https://github.com/nishio/plurality-llm-wiki-ja) | https://nishio.github.io/plurality-llm-wiki-ja/ |
+| Traditional Chinese (Taiwan) | [nishio/plurality-llm-wiki-zh-tw](https://github.com/nishio/plurality-llm-wiki-zh-tw) | https://nishio.github.io/plurality-llm-wiki-zh-tw/ |
 
 Adding an Nth language is just: create `plurality-llm-wiki-<lang>`, then add that language column to `correspondences.yaml`.
 
