@@ -52,6 +52,7 @@
 - [[plurality-definition-framings]] — プルラリティ / Plurality: JA は鈴木健経由で身体的・感覚的差異まで含む射程拡張を Open Question 化、EN は Mandarin 數位 のダブルミーニングを definition の中核に
 - [[loanword-retention-patterns]] — 山形浩生訳が概念ごとに loanword 残し / 翻訳を選び分けるパターン (プルラリティ / クアドラティック投票はカタカナ、多元投票 / 液体民主主義は訳す)
 - [[kanji-as-ja-zh-bridge]] — correspondences.yaml に zh annotation を加えると ja-zh 対応 (39) は en-ja (23) より dense、さらに 11 entries で直接 kanji を共有する。words-as-public-goods LT のテーゼ検証
+- [[civic-ai-homophone-substitution]] — 唐鳳の「Civic AI」→「仁工智慧」翻訳は字面置換 (人→仁) で儒家倫理を召喚する creative translation。kanji-as-ja-zh-bridge とは逆方向のメカニズム
 
 ### 言語コミュニティ固有の lineage (記録のみ、carving 差ではない)
 
