@@ -3,6 +3,7 @@
 # Format: <YYYY-MM-DD HH:MM>\t<type>\t<title>
 # Regenerate: python3 scripts/refresh_logs.py
 
+2026-05-28 22:30	ingest	第 4 言語 de (ドイツ語) 子 wiki を新規 scaffold + parent 反映
 2026-05-28 21:00	filing-back	meta-wishlist + Civic AI 3 言語比較 + meta-meta typology
 2026-05-28 19:00	filing-back	Kami → 地神 の意味最小化翻訳を analysis 化 + zh-tw 翻訳戦略の typology meta 分析
 2026-05-28 18:00	filing-back	「Civic AI」→「仁工智慧」の同音替字翻訳を analysis 化

@@ -30,6 +30,7 @@ The language wikis are **separate GitHub repos**, each independently administere
 | English | [nishio/plurality-llm-wiki-en](https://github.com/nishio/plurality-llm-wiki-en) | https://nishio.github.io/plurality-llm-wiki-en/ |
 | Japanese | [nishio/plurality-llm-wiki-ja](https://github.com/nishio/plurality-llm-wiki-ja) | https://nishio.github.io/plurality-llm-wiki-ja/ |
 | Traditional Chinese (Taiwan) | [nishio/plurality-llm-wiki-zh-tw](https://github.com/nishio/plurality-llm-wiki-zh-tw) | https://nishio.github.io/plurality-llm-wiki-zh-tw/ |
+| German | [nishio/plurality-llm-wiki-de](https://github.com/nishio/plurality-llm-wiki-de) | https://nishio.github.io/plurality-llm-wiki-de/ |
 
 Adding an Nth language is just: create `plurality-llm-wiki-<lang>`, then add that language column to `correspondences.yaml`.
 

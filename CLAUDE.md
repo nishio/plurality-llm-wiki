@@ -30,7 +30,8 @@ plurality-llm-wiki/                       # この repo (parent, github: nishio/
 └── wikis/                                 # 子言語 wikis (gitignored, 独立 repo)
     ├── plurality-llm-wiki-en/             # github: nishio/plurality-llm-wiki-en
     ├── plurality-llm-wiki-ja/             # github: nishio/plurality-llm-wiki-ja
-    └── plurality-llm-wiki-zh-tw/          # github: nishio/plurality-llm-wiki-zh-tw
+    ├── plurality-llm-wiki-zh-tw/          # github: nishio/plurality-llm-wiki-zh-tw
+    └── plurality-llm-wiki-de/             # github: nishio/plurality-llm-wiki-de
 ```
 
 各言語 wiki は **独立した GitHub プロジェクト** として運営され、別 admin / contributor が参加できる。filesystem 上は `wikis/` 配下に nest するが、git 管理は完全に独立。

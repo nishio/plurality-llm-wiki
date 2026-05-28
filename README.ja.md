@@ -28,6 +28,7 @@ Plurality ── Audrey Tang と E. Glen Weyl による「社会的差異を超�
 | 英語 | [nishio/plurality-llm-wiki-en](https://github.com/nishio/plurality-llm-wiki-en) | https://nishio.github.io/plurality-llm-wiki-en/ |
 | 日本語 | [nishio/plurality-llm-wiki-ja](https://github.com/nishio/plurality-llm-wiki-ja) | https://nishio.github.io/plurality-llm-wiki-ja/ |
 | 繁体中文 (台湾) | [nishio/plurality-llm-wiki-zh-tw](https://github.com/nishio/plurality-llm-wiki-zh-tw) | https://nishio.github.io/plurality-llm-wiki-zh-tw/ |
+| ドイツ語 | [nishio/plurality-llm-wiki-de](https://github.com/nishio/plurality-llm-wiki-de) | https://nishio.github.io/plurality-llm-wiki-de/ |
 
 N 言語目への拡張は: `plurality-llm-wiki-<lang>` という repo を作り、`correspondences.yaml` にその言語 column を追加するだけ。
 
