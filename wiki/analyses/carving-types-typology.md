@@ -72,6 +72,20 @@ sources:
 
 - [[civic-ai-cross-language-shapes]] — Civic AI を EN は source 横展開 (9 件)、zh-tw は concept hierarchy 縦展開 (7 件)、JA は void with touching mentions。同じ civic.ai upstream を読みながら形状が違う
 
+### Type N: 翻訳時の理論伝統 activation / block
+
+各言語が翻訳時に **自言語の累積された理論的伝統** を呼び込む現象。positive (enrichment) と negative (block) の両方向がある。
+
+- [[habermas-blocks-pluralization]] — DE で「Plural Publics」が複数形「Öffentlichkeiten」になれない (Habermas が単数 die Öffentlichkeit を 1962 年以来 dominant にしているため)。DE 翻訳者は ⿻ 記号で迂回 — **negative (block) 型**
+- [[civic-ai-homophone-substitution]] — zh-tw で人工→仁工 同音異字置換が儒家の仁を召喚 — **positive (enrichment) 型** (Type E 翻訳戦略にも該当)
+- [[japan-reverse-import]] — JA の鈴木健 / なめらか lineage が本書日本語版に逆輸入 — **positive (enrichment) 型** だが翻訳ではなく逆方向
+
+このタイプは Type E (翻訳戦略) と紛らわしいが角度が違う:
+- Type E: 翻訳者がどう翻訳するか (mechanism: 同音異字、意味最小化、漢字 import 等)
+- Type N: なぜその翻訳選択が必然化 / 制約されるか (constraint: 言語固有の伝統が block / activate する)
+
+同じ翻訳事例が両 type に該当する場合がある。
+
 ## 別カテゴリ: 言語コミュニティ固有の lineage 記録
 
 これらは厳密には「carving 差」ではなく、片言語固有の lineage / 歴史を記録した analysis。
@@ -87,6 +101,7 @@ sources:
 | Type | 件数 | 説明 |
 |---|---|---|
 | E. 翻訳戦略 | 4 | 最多 |
+| N. 理論伝統 activation/block | 3 | civic-ai-homophone-substitution (Type E と重複) / japan-reverse-import / habermas-blocks-pluralization |
 | A. 概念境界 | 2 | |
 | C. Canonical example | 1 | |
 | D. 説明の力点 | 1 | |

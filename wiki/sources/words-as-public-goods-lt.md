@@ -121,3 +121,21 @@ sources:
 LT の中核主張は「**言語の voids**」(= 対応語がない) だったが、本事例は **対応語はあるが connotation が違う** という refinement。Plurality 本の Plurality 概念には複数言語で語彙が存在するが、各語が背負う historical / political weight は異なる ── 同じ refinement が Plurality 概念体系内部で起きていてもおかしくない (例: en `Plurality` / zh `多元` / ja `プルラリティ` の connotative load 差を 比較分析する観察を [[loanword-retention-patterns]] が部分的に拾っている)。
 
 本 wiki 森を実際に運営して書く過程で、本 LT の理論が再帰的に体現された ── 言葉を public goods として扱うとき、その「公共財としての提示の仕方」自体が言語によって違う connotative cost を持つ、という追加層が visible になった (parent commits `c93f384` / `f344c34`)。
+
+### 2026-05-28: void の refinement —「discursive convention による block」
+
+DE 子 wiki の初回 ingest で発見された [[habermas-blocks-pluralization]] は、LT の void 概念をさらに refined にする:
+
+- LT の元 claim: 「言語に void がある」(対応語がない、例: 「納得」の英訳語が存在しない)
+- 本事例の refinement: 「言語に対応語はあり、文法的にも表現可能だが、**累積された理論的伝統 (discursive convention) が特定の表現を非標準にしてしまう**」
+
+具体例: DE で "Plural Publics" を訳すとき、文法的には「Öffentlichkeiten」(複数形) が可能。しかし Habermas の『公共性の構造転換』(1962) 以来 60 年の DE 学術伝統が「die Öffentlichkeit」(単数) を圧倒的に dominant にしているため、複数形採用が非標準的になる。
+
+つまり「言語の中で何が言えるか」は **文法だけでなく、累積された discourse にも依存する**。LT の「void」を 2 層に分解する観察:
+
+| void の type | 制約源 | 例 |
+|---|---|---|
+| 文法的 void | 言語の文法・語彙体系 | EN に「納得」の対応語がない |
+| Discursive convention による block | 累積された理論伝統 / 学術慣習 | DE で「Öffentlichkeiten」が Habermas 経由で非標準化 |
+
+後者は LT 当時に明示されていなかった追加層で、cross-language comparison でしか発見できない種類の制約。

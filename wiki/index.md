@@ -58,9 +58,11 @@
 - [[zh-tw-translation-strategies]] — zh-tw が Plurality 用語を翻訳する 5 戦略 typology (直訳 / 同音異字置換 / 意味の最小化 / 既存哲学概念での再 framing / 音訳)
 - [[civic-ai-cross-language-shapes]] — Civic AI / 6-Pack of Care を EN (source 横展開 9 件) / zh-tw (concept hierarchy 縦展開 7 件) / JA (void with touching mentions) で carving 形状が全く違う
 
+- [[habermas-blocks-pluralization]] — DE で「Plural Publics」が複数形「Öffentlichkeiten」になれない (Habermas が単数 die Öffentlichkeit を 1962 年以来 dominant にしているため)。DE 翻訳者は ⿻ 記号で迂回。discursive convention による block の事例
+
 ### Meta-meta (typology of analyses)
 
-- [[carving-types-typology]] — 14 analyses を見渡した type 分類。翻訳戦略 (Type E) が最多 4 件、概念境界 / 系譜選択 / canonical example / 説明力点 / 言語学的 affordance / ingest shape の 6 types。未観察 future types (connotation / dormancy / ingest velocity / dialect / 翻訳者一貫性) も列挙
+- [[carving-types-typology]] — 14 analyses (+ habermas-blocks) を見渡した type 分類。翻訳戦略 (Type E) が最多 4 件、新 Type N (理論伝統 activation/block) 3 件、概念境界 / 系譜選択 / canonical example / 説明力点 / 言語学的 affordance / ingest shape も含む 8 types。未観察 future types (connotation / dormancy / ingest velocity / dialect / 翻訳者一貫性) も列挙
 
 ### 言語コミュニティ固有の lineage (記録のみ、carving 差ではない)
 
