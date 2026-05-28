@@ -38,6 +38,7 @@
 ## Sources
 
 - [[words-as-public-goods-lt]] — 西尾 LT「Words as Public Goods / 公共財としての言葉」(2024-01-03, Plurality Tokyo "Glen in Japan")。本 wiki 森の発想の根底。
+- [[meta-wishlist]] — 3 子 wiki の wishlist を集約。subagent では取得できなかった 22 items を人間支援用に優先度別整理。
 
 ## Analyses
 
@@ -55,6 +56,11 @@
 - [[civic-ai-homophone-substitution]] — 唐鳳の「Civic AI」→「仁工智慧」翻訳は字面置換 (人→仁) で儒家倫理を召喚する creative translation。kanji-as-ja-zh-bridge とは逆方向のメカニズム
 - [[kami-as-dishen]] — 「Kami」(日本神道) →「地神」翻訳は文化的含意を脱ぎ捨てて機能的な核 (在地・有界・可退場) だけを最小構成で残す「意味の最小化」戦略
 - [[zh-tw-translation-strategies]] — zh-tw が Plurality 用語を翻訳する 5 戦略 typology (直訳 / 同音異字置換 / 意味の最小化 / 既存哲学概念での再 framing / 音訳)
+- [[civic-ai-cross-language-shapes]] — Civic AI / 6-Pack of Care を EN (source 横展開 9 件) / zh-tw (concept hierarchy 縦展開 7 件) / JA (void with touching mentions) で carving 形状が全く違う
+
+### Meta-meta (typology of analyses)
+
+- [[carving-types-typology]] — 14 analyses を見渡した type 分類。翻訳戦略 (Type E) が最多 4 件、概念境界 / 系譜選択 / canonical example / 説明力点 / 言語学的 affordance / ingest shape の 6 types。未観察 future types (connotation / dormancy / ingest velocity / dialect / 翻訳者一貫性) も列挙
 
 ### 言語コミュニティ固有の lineage (記録のみ、carving 差ではない)
 
