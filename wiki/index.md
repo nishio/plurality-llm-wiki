@@ -53,6 +53,8 @@
 - [[loanword-retention-patterns]] — 山形浩生訳が概念ごとに loanword 残し / 翻訳を選び分けるパターン (プルラリティ / クアドラティック投票はカタカナ、多元投票 / 液体民主主義は訳す)
 - [[kanji-as-ja-zh-bridge]] — correspondences.yaml に zh annotation を加えると ja-zh 対応 (39) は en-ja (23) より dense、さらに 11 entries で直接 kanji を共有する。words-as-public-goods LT のテーゼ検証
 - [[civic-ai-homophone-substitution]] — 唐鳳の「Civic AI」→「仁工智慧」翻訳は字面置換 (人→仁) で儒家倫理を召喚する creative translation。kanji-as-ja-zh-bridge とは逆方向のメカニズム
+- [[kami-as-dishen]] — 「Kami」(日本神道) →「地神」翻訳は文化的含意を脱ぎ捨てて機能的な核 (在地・有界・可退場) だけを最小構成で残す「意味の最小化」戦略
+- [[zh-tw-translation-strategies]] — zh-tw が Plurality 用語を翻訳する 5 戦略 typology (直訳 / 同音異字置換 / 意味の最小化 / 既存哲学概念での再 framing / 音訳)
 
 ### 言語コミュニティ固有の lineage (記録のみ、carving 差ではない)
 

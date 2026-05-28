@@ -3,6 +3,7 @@
 # Format: <YYYY-MM-DD HH:MM>\t<type>\t<title>
 # Regenerate: python3 scripts/refresh_logs.py
 
+2026-05-28 19:00	filing-back	Kami → 地神 の意味最小化翻訳を analysis 化 + zh-tw 翻訳戦略の typology meta 分析
 2026-05-28 18:00	filing-back	「Civic AI」→「仁工智慧」の同音替字翻訳を analysis 化
 2026-05-28 11:00	filing-back	connotation asymmetry の observation を [[words-as-public-goods-lt]] に追記
 2026-05-27 16:30	filing-back	registry と child wiki の双方向遅延 pattern を [[wiki-forest]] に追記
