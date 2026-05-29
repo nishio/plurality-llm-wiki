@@ -339,3 +339,13 @@
   zh-tw: 資本主義
   de: ~
   notes: 字形完全一致。
+
+# ============================================================
+# JA-native + DE partial coverage (empirical 検証された void topography)
+# ============================================================
+
+- en: ~
+  ja: 納得
+  zh-tw: ~
+  de: Nachvollziehbarkeit
+  notes: "「納得」(subjective acceptance + understanding) は JA-native デジタル民主主義言説の中心概念。Plurality 本 JA 版翻訳には 2 回しか出現しないが、native sources (plurality-japanese Scrapbox 1421p で 40 occurrences across 24 pages、team-mirai-manifesto ch 9/10 で 3 occurrences) では高頻度。EN/zh-tw は真の void で context ごとに paraphrase される (sense of / intuitive / 達成 / 直覺)。DE「Nachvollziehbarkeit」(nachvollziehbar) が partial coverage を持つ ── 「心の中で辿って理解できる」が 納得 core に構造的類似。本書 DE 版 6-0 章「intuitiv nachvollziehbar」で実例。詳細 parent analyses/nattoku-translation-vs-native。"
