@@ -59,6 +59,7 @@
 - [[civic-ai-cross-language-shapes]] — Civic AI / 6-Pack of Care を EN (source 横展開 9 件) / zh-tw (concept hierarchy 縦展開 7 件) / JA (void with touching mentions) で carving 形状が全く違う
 
 - [[habermas-blocks-pluralization]] — DE で「Plural Publics」が複数形「Öffentlichkeiten」になれない (Habermas が単数 die Öffentlichkeit を 1962 年以来 dominant にしているため)。DE 翻訳者は ⿻ 記号で迂回。discursive convention による block の事例
+- [[nattoku-translation-vs-native]] — 「納得」が JA Plurality 本翻訳に 2 回のみ vs JA native sources で 40+ 回。翻訳経路の比較と native discourse の収集は別の方法論で違う carving を surface する
 
 ### Meta-meta (typology of analyses)
 

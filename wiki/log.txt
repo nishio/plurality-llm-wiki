@@ -3,6 +3,7 @@
 # Format: <YYYY-MM-DD HH:MM>\t<type>\t<title>
 # Regenerate: python3 scripts/refresh_logs.py
 
+2026-05-29 11:00	filing-back	「納得」empirical 検証 + 翻訳経路 vs native discourse の 2 方法論
 2026-05-28 23:30	filing-back	Habermas 伝統が DE「Plural Publics」複数化を block する事例を analysis 化
 2026-05-28 22:30	ingest	第 4 言語 de (ドイツ語) 子 wiki を新規 scaffold + parent 反映
 2026-05-28 21:00	filing-back	meta-wishlist + Civic AI 3 言語比較 + meta-meta typology

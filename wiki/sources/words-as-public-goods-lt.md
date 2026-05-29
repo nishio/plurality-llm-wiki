@@ -139,3 +139,31 @@ DE 子 wiki の初回 ingest で発見された [[habermas-blocks-pluralization]
 | Discursive convention による block | 累積された理論伝統 / 学術慣習 | DE で「Öffentlichkeiten」が Habermas 経由で非標準化 |
 
 後者は LT 当時に明示されていなかった追加層で、cross-language comparison でしか発見できない種類の制約。
+
+### 2026-05-29: 「納得」void 主張の empirical 検証 — 翻訳経路と native discourse の差
+
+LT は「英語に『納得』の対応語が無い」を void の代表例として主張した。これを 4 言語 Plurality 本 + JA native sources で empirical に検証 ([[nattoku-translation-vs-native]] で詳述):
+
+**翻訳経路の比較** (4 言語 Plurality 本):
+- JA 翻訳本で「納得」は 2 回のみ出現
+- EN: "sense of compromise" / "intuitive" (context-dependent paraphrase、partial 表現)
+- zh-tw: 直訳で「納得」layer を脱落
+- **DE: 「intuitiv nachvollziehbar」** で「nachvollziehbar」(心の中で辿って理解できる) が 納得 core に最も近い
+
+つまり LT 主張「『納得』が英語に void」は EN について正しいが、**foreign 全般に void ではない** (DE には partial 対応語あり)。
+
+**Native JA discourse での頻度**:
+- Plurality 本 JA 版 (翻訳): 2 occurrences
+- a.txt overview: 0
+- team-mirai 衆院選 2026 マニフェスト 9, 10 章 (native 政党文書): 3 occurrences
+- plurality-japanese Scrapbox (native コミュニティ議論 1421p): **40 occurrences across 24 pages**
+
+つまり **20 倍以上の頻度差**。「納得」は JA-native デジタル民主主義言説のキー概念だが、EN → JA 翻訳 flow ではほぼ呼び込まれない。
+
+**LT 仮説の支持**: LT 著者 (西尾) は Code for Japan 議論で出た「納得」発言を起点に LT を構成しており、これは native JA discourse の実例。本 analysis の empirical 検証は LT 仮説が **native JA frequency を実際に観察した結果として正しい** ことを裏付ける。
+
+**方法論的含意**: 本 wiki 森は **翻訳経路** (1 source → N 言語) と **native discourse** (各言語が自前 vocabulary で書いたもの) の 2 方法論を区別すべき。それぞれ違う carving を surface する:
+- 翻訳経路 → 訳語選択・block / activation 経路
+- Native discourse → 言語固有の頻出概念
+
+LT 元主張は native discourse 方法論に基づいていた。本 wiki 森が両方法論を支援するには、各子 wiki が翻訳 source と native discourse source の両方を持つことが必要。現状 JA が最も充実、EN / zh-tw が部分的、DE が native source 不足 (wishlist 候補)。
