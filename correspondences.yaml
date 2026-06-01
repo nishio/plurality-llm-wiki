@@ -348,4 +348,4 @@
   ja: 納得
   zh-tw: ~
   de: Nachvollziehbarkeit
-  notes: "「納得」(subjective acceptance + understanding) は JA-native デジタル民主主義言説の中心概念。Plurality 本 JA 版翻訳には 2 回しか出現しないが、native sources (plurality-japanese Scrapbox 1421p で 40 occurrences across 24 pages、team-mirai-manifesto ch 9/10 で 3 occurrences) では高頻度。EN/zh-tw は真の void で context ごとに paraphrase される (sense of / intuitive / 達成 / 直覺)。DE「Nachvollziehbarkeit」(nachvollziehbar) が partial coverage を持つ ── 「心の中で辿って理解できる」が 納得 core に構造的類似。本書 DE 版 6-0 章「intuitiv nachvollziehbar」で実例。詳細 parent analyses/nattoku-translation-vs-native。"
+  notes: "「納得」(retrace + acceptance を統合する単一語) は JA-native デジタル民主主義言説の中心概念。EN/ZH は真の void (文脈別 paraphrase: be convinced/accept/make sense, 觉得有道理/想通了/接受/认可/信服)。DE は構造的 partial overlap ── nachvollziehbar は retrace 構造のみ carve、acceptance 構造は別語 (überzeugend/einleuchtend/einverstanden) に分散。JA は字義 (納=take in、得=grasp) + 古語「のうとく」(仏教語、1184 年初出「他物を受け入れて自己のものにする」) の構造的継続性で単一語 carve を支える。Plurality 本 JA 版翻訳 2 回 vs native sources (Scrapbox 40+ / team-mirai-manifesto 3) で 20 倍以上の頻度差。詳細 [[plurality-llm-wiki/wiki/sources/nattoku-research-notes]] と analyses/nattoku-translation-vs-native。"

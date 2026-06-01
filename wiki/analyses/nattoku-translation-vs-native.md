@@ -102,3 +102,53 @@ DE wiki に native ドイツ語デジタル民主主義文書を集めること�
 - zh-tw native discourse でも「納得」相当 (e.g., 「認同」「服氣」「心服口服」) が頻出するか?
 - EN native discourse で「納得」の core (subjective acceptance + understanding) を一語で articulate する語はあるか? "buy-in" は近いが軽すぎる、"sense-making" は process 寄り、"acceptance" は accepting だけで understanding を含まない
 - 翻訳経路と native discourse の両方を持つ言語 (現状 JA がほぼ唯一) でしか、本 analysis のような methodological 比較ができない。EN / zh-tw / DE で同じ比較を可能にするには、各言語の native ingest を deepen する必要がある
+
+## Updates
+
+### 2026-06-02: 「納得」3 言語比較研究ノートからの refinement ([[nattoku-research-notes]])
+
+西尾の GPT 補助調査 ([[nattoku-research-notes]]) から、本 analysis を 2 点 refine:
+
+**1. DE「Nachvollziehbarkeit」の partial coverage は私の以前の表現より精密に必要**
+
+以前は「DE の Nachvollziehbarkeit が 納得 core に最も近い」と書いたが、empirical に refined すると:
+
+| 概念 | 焦点 | 含む要素 |
+|---|---|---|
+| nachvollziehbar | **対象側** (説明・判断・行動) | 道筋を追える (retrace) |
+| 納得できる | **主体側** (理解する人の内面) | 道筋を追える **+ 自分の中に受け入れる** |
+
+つまり Nachvollziehbarkeit は **納得 の retrace 構造のみを覆い、acceptance 構造は別の語 (überzeugend / einleuchtend / überzeugt sein) に分散している**。両者は重なるが同じではない (例: 「理解はできるが納得はできない」 = 「Ich kann es nachvollziehen, aber ich bin nicht einverstanden」)。
+
+「partial coverage」claim 自体は正しいが、**部分的に覆っている内容** が retrace 側であって acceptance 側ではない、と精密化が必要。
+
+**2. ZH も真の void が empirical 確認された**
+
+ZH-tw subagent が翻訳本では「達成」「直覺」で 納得 layer を脱落させていた事実は既知だったが、native ZH discourse でも単一対応語がないことが確認:
+
+- 中心 phrase: 「**不只是听懂了，而是觉得有道理，心里也能接受**」
+- 文脈別に「觉得有道理 / 想通了 / 接受 / 认可 / 信服 / 服气 / 不服 / 明白 / 说得通」と分散
+- 「納得感」は中文で一語にしにくいと明示
+
+つまり EN と ZH は両方 **真の void** (multiple paraphrases、single equivalent なし)。
+
+### 4 言語の最終的 void topography (refined)
+
+| 言語 | 「納得」coverage | mechanism |
+|---|---|---|
+| EN | 真の void | 文脈別 paraphrase: be convinced / accept / make sense / buy-in / be satisfied |
+| ZH | 真の void | 文脈別 paraphrase: 觉得有道理 / 想通了 / 接受 / 认可 / 信服 / 服气 |
+| DE | **構造的 partial overlap** | nachvollziehbar = retrace のみ、acceptance は別語 (überzeugend / einleuchtend) |
+| JA | 単一語で完全 carve | 納得 = retrace + acceptance を統合 |
+
+JA は **retrace + acceptance を一語に統合した稀な carving** を持つ。これは 字義 (納 = take in/accept + 得 = grasp/realize) と古語 「のうとく」(仏教語、初出 1184: 他物を受け入れて自己のものにする) の構造的継続性に支えられている。
+
+### 方法論的観察の追加
+
+本 refinement は **「partial coverage」という coarse な categorization では捉えきれない構造差** が言語間にあることを示す。Type N (理論伝統 activation/block) と区別される、より細かい **「概念の内部構造の部分 carve」** という carving type が観察された:
+
+- 完全 carve (1 言語 = 1 概念単位): JA「納得」
+- 構造的 partial carve (内部構造の一部を別語に分配): DE「nachvollziehbar」+「überzeugen」
+- 真の void (文脈別 paraphrase で全部分散): EN / ZH
+
+これは [[carving-types-typology]] に Type O (内部構造の言語別 carve 分布) として追加できる候補。

@@ -5,6 +5,7 @@
 
 wiki-forest	concept	concepts/wiki-forest.md	各言語の wiki を独立した「木」として並存させ、それらが共存する場 (forest) を横断観察の対象とする多言語 wiki architecture。Wikipedia の interlanguage link が前提とする「同一概念の翻訳対応」を弱めて「同じ/関連する話題の主張」だけに留めることで、文節化の差異そのものを観察可能にする。
 meta-wishlist	source	sources/meta-wishlist.md	3 子 wiki の wishlist (合計 33+ items) を集約した meta-wishlist。subagent では取得できない source を、人間が手動 fetch + raw/ 配置するための作業ガイド。優先度 (easy/medium/hard/specialized) 別に分類。
+nattoku-research-notes	source	sources/nattoku-research-notes.md	西尾 (NISHIO) が GPT を補助に「納得」概念を多言語で empirical に調査したノート 3 件。英語話者向け解説 / ドイツ語 nachvollziehbar との比較 / 中国語での対応語。parent analyses/nattoku-translation-vs-native の empirical foundation を提供。
 words-as-public-goods-lt	source	sources/words-as-public-goods-lt.md	西尾泰和 LT「Words as Public Goods / 公共財としての言葉」(2024-01-03, Plurality Tokyo "Glen in Japan")。少数言語話者が独自に発達させた語彙を「公共財」として輸出することで世界全体の知的生産性が上がる、と論じた。本 multilingual wiki 森の発想の根底。
 augmented-deliberation-examples	analysis	analyses/augmented-deliberation-examples.md	拡張熟議 / Augmented-Deliberation は両言語で同じ章 (5-4) を出典とするが、JA は安野貴博の 2024 東京都知事選を主要事例セクションとして据え、EN は bridging algorithms の理論と選抜方法 (election / sortition / administration) の三項対立を引く。同じ概念に対する代表例の選び方が違う。
 carving-types-typology	analysis	analyses/carving-types-typology.md	parent wiki に蓄積された 14 analyses を見渡し、観察された cross-language carving difference の type を分類する meta-meta 分析。翻訳戦略 type が最も多く観察され、概念境界・系譜選択・説明力点・canonical example・言語学的 affordance・ingest shape 等の type が発見済み。未観察の future type も列挙。

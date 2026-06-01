@@ -39,6 +39,7 @@
 
 - [[words-as-public-goods-lt]] — 西尾 LT「Words as Public Goods / 公共財としての言葉」(2024-01-03, Plurality Tokyo "Glen in Japan")。本 wiki 森の発想の根底。
 - [[meta-wishlist]] — 3 子 wiki の wishlist を集約。subagent では取得できなかった 22 items を人間支援用に優先度別整理。
+- [[nattoku-research-notes]] — 「納得」を多言語 (en / de / zh) で empirical に調査した NISHIO + GPT の研究ノート 3 件 synthesis。analyses/nattoku-translation-vs-native の empirical foundation
 
 ## Analyses
 
